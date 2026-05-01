@@ -65,3 +65,15 @@ To prevent overfitting on a relatively small dataset, the training pipeline appl
 * **Scikit-learn** (for generating classification reports and confusion matrices)
 * **PIL (Pillow)** (for image loading and processing)
 * **Kaggle API** (for seamless data downloading)
+
+## 📈 Results
+
+| Model | Test Accuracy | Approach |
+|---|---|---|
+| Custom CNN (3-block) | 70.63% | Trained from scratch |
+| ResNet18 (fine-tuned) | 93.20% | Transfer learning |
+
+Transfer learning with ResNet18 achieved a **+22.57% improvement** over the custom 
+baseline, demonstrating the effectiveness of pretrained features on small datasets (~4,300 images).
+
+**Lowest recall class:** Rose — visually similar to other flowers under varied lighting conditions.
